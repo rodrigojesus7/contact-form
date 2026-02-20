@@ -18,31 +18,28 @@
     --error-text-font-weight: 400;
     --error-text-line-height: 150%;
     --error-text-letter-spacing: 0;
-    --error-color: #D73C3C
-
-
-    --input-text-font-size: 1.8rem;
+    --error-color: #D73C3C --input-text-font-size: 1.8rem;
     --input-text-font-weight: 400;
     --input-text-line-height: 150%;
     --input-text-letter-spacing: 0;
     --input-background-color: #FFFFFF;
     --input-border-color: #86A2A5;
     --input-border-color-active: #0C7D69;
-    
+
     --input-checkbox-color: #86A2A5;
     --input-checkbox-color-active: #0C7D69;
 
     --input-radio-active-background-color: #E0F1E8;
     --input-radio-radio-color: #86A2A5;
     --input-radio-active-radio-color: #0C7D69;
-    
+
 
     --consent-checkbox-text-font-size: 3.2rem;
     --consent-checkbox-text-font-weight: 700;
     --consent-checkbox-text-line-height: 100%;
     --consent-checkbox-text-letter-spacing: -0.1rem;
-    
-    
+
+
     --submit-button-text-font-size: 1.8rem;
     --submit-button-text-font-weight: 700;
     --submit-button-text-line-height: 150%;
@@ -58,7 +55,7 @@
     --message-sent-title-letter-spacing: 0;
     --message-sent-title-color: #FFFFFF;
 
-    
+
     --message-sent-text-font-size: 1.6rem;
     --message-sent-text-font-weight: 400;
     --message-sent-text-line-height: 150%;
@@ -69,4 +66,34 @@
 
     --body-background-color: #E0F1E8;
     --card-background-color: #FFFFFF;
+}
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100dvh;
+
+    background-color: var(--body-background-color);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 34.3rem;
+
+    background-color: var(--card-background-color);
+
+    padding: 2.4rem;
+
+    margin-top: 3.2rem;
+    margin-bottom: 3.2rem;
+
+    border-radius: 1.6rem;
+
+    gap: 4rem;
 }
