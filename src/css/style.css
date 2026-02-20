@@ -1,0 +1,72 @@
+:root {
+
+    --heading-font-size: 3.2rem;
+    --heading-font-weight: 700;
+    --heading-line-height: 100%;
+    --heading-letter-spacing: -0.1rem;
+
+
+    --label-font-size: 1.6rem;
+    --label-font-weight: 400;
+    --label-line-height: 150%;
+    --label-letter-spacing: 0;
+    --label-color: #2A4144;
+    --label-required-color: #0C7D69;
+
+
+    --error-text-font-size: 1.6rem;
+    --error-text-font-weight: 400;
+    --error-text-line-height: 150%;
+    --error-text-letter-spacing: 0;
+    --error-color: #D73C3C
+
+
+    --input-text-font-size: 1.8rem;
+    --input-text-font-weight: 400;
+    --input-text-line-height: 150%;
+    --input-text-letter-spacing: 0;
+    --input-background-color: #FFFFFF;
+    --input-border-color: #86A2A5;
+    --input-border-color-active: #0C7D69;
+    
+    --input-checkbox-color: #86A2A5;
+    --input-checkbox-color-active: #0C7D69;
+
+    --input-radio-active-background-color: #E0F1E8;
+    --input-radio-radio-color: #86A2A5;
+    --input-radio-active-radio-color: #0C7D69;
+    
+
+    --consent-checkbox-text-font-size: 3.2rem;
+    --consent-checkbox-text-font-weight: 700;
+    --consent-checkbox-text-line-height: 100%;
+    --consent-checkbox-text-letter-spacing: -0.1rem;
+    
+    
+    --submit-button-text-font-size: 1.8rem;
+    --submit-button-text-font-weight: 700;
+    --submit-button-text-line-height: 150%;
+    --submit-button-text-letter-spacing: 0;
+    --submit-text-color: #FFFFFF;
+    --submit-button-background-color: #0C7D69;
+    --submit-button-background-color-active: #064037;
+
+
+    --message-sent-title-font-size: 1.8rem;
+    --message-sent-title-font-weight: 700;
+    --message-sent-title-line-height: 150%;
+    --message-sent-title-letter-spacing: 0;
+    --message-sent-title-color: #FFFFFF;
+
+    
+    --message-sent-text-font-size: 1.6rem;
+    --message-sent-text-font-weight: 400;
+    --message-sent-text-line-height: 150%;
+    --message-sent-text-letter-spacing: 0;
+    --message-sent-text-color: #E0F1E8;
+    --message-sent-icon-color: #FFFFFF;
+
+
+    --body-background-color: #E0F1E8;
+    --card-background-color: #FFFFFF;
+}
