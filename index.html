@@ -23,60 +23,60 @@
 
     <main class="card">
 
-        <section>
+        <fieldset>
 
-            <fieldset>
+            <div class="formSection">
+                <legend class="formSection__heading">Contact Us</legend>
 
-                <legend>Contact Us</legend>
+                <div class="formSection__container">
 
-                <div>
-
-                    <div>
+                    <div class="formSection__container__inputContainer firstNameContainer">
                         <div>
-                            <label for="first-name">First Name<span> *</span></label>
+                            <label class="label" for="first-name">First Name<span aria-hidden="true" class="requiredSymbol"> *</span></label>
                         </div>
-                        <input type="text" name="first-name" id="first-name" required>
-                        <span>This field is required</span>
+                        <input class="firstNameInput" type="text" name="first-name" id="first-name" required>
+                        <span class="formSection__container__inputContainer__error">This field is required</span>
                     </div>
 
 
-                    <div>
-                        <label for="last-name">Last Name<span> *</span></label>
-                        <input type="text" name="last-name" id="last-name" required>
-                        <span>This field is required</span>
+                    <div class="formSection__container__inputContainer lastNameContainer">
+                        <label class="label" for="last-name">Last Name<span aria-hidden="true" class="requiredSymbol"> *</span></label>
+                        <input class="lastNameInput" type="text" name="last-name" id="last-name" required>
+                        <span class="formSection__container__inputContainer__error">This field is required</span>
                     </div>
 
 
 
-                    <div>
-                        <label for="email">Last Name<span> *</span></label>
-                        <input type="email" name="email" id="email" required>
-                        <span>Please enter a valid email address</span>
+                    <div class="formSection__container__inputContainer emailContainer">
+                        <label class="label" for="email">Email Address<span aria-hidden="true" class="requiredSymbol"> *</span></label>
+                        <input class="emailInput" type="email" name="email" id="email" required>
+                        <span class="formSection__container__inputContainer__error">Please enter a valid email
+                            address</span>
                     </div>
 
 
-                    <div>
-                        <label for="query-type">Query Type<span> *</span></label>
+                    <div class="formSection__container__inputContainer queryContainer">
+                        <label class="label" for="query-type">Query Type<span aria-hidden="true" class="requiredSymbol"> *</span></label>
                         <div>
-                            <input type="radio" name="query-type" id="general-enquiry" value="General Enquiry">
-                            <input type="radio" name="query-type" id="support-request" value="Support Request">
+                            <input class="radioInputGeneralEnquiry" type="radio" name="query-type" id="general-enquiry" value="General Enquiry">
+                            <input class="radioInputSuportRequest" type="radio" name="query-type" id="support-request" value="Support Request">
                         </div>
-                        <span>Please select a query type</span>
+                        <span class="formSection__container__inputContainer__error">Please select a query type</span>
                     </div>
 
-                    <div>
-                        <label for="message">Message<span> *</span></label>
-                        <textarea name="message" id="message"></textarea>
-                        <span>This field is required</span>
+                    <div class="formSection__container__inputContainer messageContainer">
+                        <label class="label" for="message">Message<span aria-hidden="true" class="requiredSymbol"> *</span></label>
+                        <textarea class="textarea" name="message" id="message"></textarea>
+                        <span class="formSection__container__inputContainer__error">This field is required</span>
                     </div>
 
 
                 </div>
+            </div>
 
 
-            </fieldset>
 
-        </section>
+        </fieldset>
 
         <section>
 

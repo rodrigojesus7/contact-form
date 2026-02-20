@@ -4,6 +4,7 @@
     --heading-font-weight: 700;
     --heading-line-height: 100%;
     --heading-letter-spacing: -0.1rem;
+    --heading-color: #2A4144;
 
 
     --label-font-size: 1.6rem;
@@ -18,10 +19,13 @@
     --error-text-font-weight: 400;
     --error-text-line-height: 150%;
     --error-text-letter-spacing: 0;
-    --error-color: #D73C3C --input-text-font-size: 1.8rem;
+    --error-color: #D73C3C;
+
+    --input-text-font-size: 1.8rem;
     --input-text-font-weight: 400;
     --input-text-line-height: 150%;
     --input-text-letter-spacing: 0;
+    --input-text-color: #2A4144;
     --input-background-color: #FFFFFF;
     --input-border-color: #86A2A5;
     --input-border-color-active: #0C7D69;
@@ -77,6 +81,8 @@ body {
 
     min-height: 100dvh;
 
+    font-family: Karla, sans-serif;
+
     background-color: var(--body-background-color);
 }
 
@@ -84,7 +90,7 @@ body {
     display: flex;
     flex-direction: column;
 
-    max-width: 34.3rem;
+    width: 34.3rem;
 
     background-color: var(--card-background-color);
 
@@ -96,4 +102,120 @@ body {
     border-radius: 1.6rem;
 
     gap: 4rem;
+}
+
+fieldset {
+    border: none;
+}
+
+.formSection {
+    display: flex;
+    flex-direction: column;
+
+    gap: 3.2rem;
+
+}
+
+.formSection__heading {
+    font-size: var(--heading-font-size);
+    font-weight: var(--heading-font-weight);
+    line-height: var(--heading-line-height);
+    letter-spacing: var(--heading-letter-spacing);
+
+    color: var(--heading-color);
+}
+
+.formSection__container {
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+
+    grid-template-areas:
+        'firstName'
+        'lastName'
+        'email'
+        'query'
+        'message'
+    ;
+
+    gap: 2.4rem;
+}
+
+.formSection__container__inputContainer {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.8rem;
+}
+
+.firstNameContainer {
+    grid-area: firstName;
+}
+
+.lastNameContainer {
+    grid-area: lastName;
+
+}
+
+.emailContainer {
+    grid-area: email;
+}
+
+.queryContainer {
+    grid-area: query;
+}
+
+.messageContainer {
+    grid-area: message;
+}
+
+.formSection__container__inputContainer__error {
+    font-size: var(--error-text-font-size);
+    font-weight: var(--error-text-font-weight);
+    line-height: var(--error-text-line-height);
+    letter-spacing: var(--error-text-letter-spacing);
+
+    color: var(--error-color);
+}
+
+
+.label {
+    font-size: var(--label-font-size);
+    font-weight: var(--label-font-weight);
+    line-height: var(--label-line-height);
+    letter-spacing: var(--label-letter-spacing);
+
+    color: var(--label-color);
+}
+
+.requiredSymbol {
+    color: var(--label-required-color);
+}
+
+.firstNameInput,
+.lastNameInput,
+.emailInput,
+.radioInputGeneralEnquiry,
+.radioInputSuportRequest{
+    height: 5.1rem;
+    padding: 1.2rem 2.4rem;
+
+    background-color: var(--input-background-color);
+    color: var(--input-text-color);
+
+    border-radius: 0.8rem;
+    border: 0.1rem solid var(--input-border-color);
+}
+
+.textarea{
+    height: 24rem;
+
+    padding: 1.2rem 2.4rem;
+
+    background-color: var(--input-background-color);
+    color: var(--input-text-color);
+
+    border-radius: 0.8rem;
+    border: 0.1rem solid var(--input-border-color);
 }
