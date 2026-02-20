@@ -13,9 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/style.css">
-    <link rel="stylesheet" href="./src/css/responsive.css">
+    <link rel="stylesheet" href="./src/css/reset.css?v=1.0">
+    <link rel="stylesheet" href="./src/css/style.css?v=1.0">
+    <link rel="stylesheet" href="./src/css/responsive.css?v=1.0">
 
 </head>
 
@@ -32,7 +32,8 @@
 
                     <div class="formSection__container__inputContainer firstNameContainer">
                         <div>
-                            <label class="label" for="first-name">First Name<span aria-hidden="true" class="requiredSymbol"> *</span></label>
+                            <label class="label" for="first-name">First Name<span aria-hidden="true"
+                                    class="requiredSymbol"> *</span></label>
                         </div>
                         <input class="firstNameInput" type="text" name="first-name" id="first-name" required>
                         <span class="formSection__container__inputContainer__error">This field is required</span>
@@ -40,7 +41,8 @@
 
 
                     <div class="formSection__container__inputContainer lastNameContainer">
-                        <label class="label" for="last-name">Last Name<span aria-hidden="true" class="requiredSymbol"> *</span></label>
+                        <label class="label" for="last-name">Last Name<span aria-hidden="true" class="requiredSymbol">
+                                *</span></label>
                         <input class="lastNameInput" type="text" name="last-name" id="last-name" required>
                         <span class="formSection__container__inputContainer__error">This field is required</span>
                     </div>
@@ -48,7 +50,8 @@
 
 
                     <div class="formSection__container__inputContainer emailContainer">
-                        <label class="label" for="email">Email Address<span aria-hidden="true" class="requiredSymbol"> *</span></label>
+                        <label class="label" for="email">Email Address<span aria-hidden="true" class="requiredSymbol">
+                                *</span></label>
                         <input class="emailInput" type="email" name="email" id="email" required>
                         <span class="formSection__container__inputContainer__error">Please enter a valid email
                             address</span>
@@ -56,16 +59,26 @@
 
 
                     <div class="formSection__container__inputContainer queryContainer">
-                        <label class="label" for="query-type">Query Type<span aria-hidden="true" class="requiredSymbol"> *</span></label>
-                        <div>
-                            <input class="radioInputGeneralEnquiry" type="radio" name="query-type" id="general-enquiry" value="General Enquiry">
-                            <input class="radioInputSuportRequest" type="radio" name="query-type" id="support-request" value="Support Request">
+                        <label class="label" for="query-type">Query Type<span aria-hidden="true" class="requiredSymbol">
+                                *</span></label>
+
+                        <div class="formSection__container__inputContainer__queryContainer">
+
+                            <label class="query" for="general-enquiry"><input class="radioInputGeneralEnquiry"
+                                    type="radio" name="query-type" id="general-enquiry" value="General Enquiry">General
+                                Enquiry</label>
+
+                            <label class="query" for="support-request"><input class="radioInputSuportRequest"
+                                    type="radio" name="query-type" id="support-request" value="Support Request">Support
+                                Request</label>
+
                         </div>
                         <span class="formSection__container__inputContainer__error">Please select a query type</span>
                     </div>
 
                     <div class="formSection__container__inputContainer messageContainer">
-                        <label class="label" for="message">Message<span aria-hidden="true" class="requiredSymbol"> *</span></label>
+                        <label class="label" for="message">Message<span aria-hidden="true" class="requiredSymbol">
+                                *</span></label>
                         <textarea class="textarea" name="message" id="message"></textarea>
                         <span class="formSection__container__inputContainer__error">This field is required</span>
                     </div>
