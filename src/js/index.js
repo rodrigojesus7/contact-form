@@ -1,5 +1,8 @@
 const query = document.querySelectorAll('.query')
 const radioInput = document.querySelectorAll('.radioInput')
+const consentInput = document.querySelector('.consentInput')
+const consentSvg = document.querySelector('.consentSvg')
+const consentSvgPath = document.querySelector('.consentSvgPath')
 
 radioInput.forEach((radio, index) => {
 
@@ -14,4 +17,17 @@ radioInput.forEach((radio, index) => {
         } 
 
     })
+})
+
+
+consentInput.addEventListener('input', function(){
+
+    if(consentInput.checked){
+        consentSvg.classList.remove('consentSvgBorder')
+        consentSvgPath.classList.remove('hidden')
+    } else{
+        consentSvg.classList.add('consentSvgBorder')
+        consentSvgPath.classList.add('hidden')
+    }
+
 })

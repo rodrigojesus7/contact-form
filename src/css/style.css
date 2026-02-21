@@ -326,11 +326,13 @@ fieldset {
 
 }
 
-.consentLabel{
+.consentLabel {
     display: flex;
     align-items: center;
 
     gap: 1.6rem;
+
+    cursor: pointer;
 }
 
 
@@ -338,6 +340,44 @@ input[type='checkbox'] {
     appearance: none;
 }
 
+.consentSvgBorder {
+    border-radius: 0.2rem;
+    border: 0.1rem solid var(--input-checkbox-color);
+}
+
+.submitSection__consentContainer__inputContainer:has(.consentInput:focus-visible){
+    border-radius: 0.8rem;
+    border: 0.1rem solid var(--input-border-color-active);
+
+    padding: 0.8rem;
+}
+
+.submitSection__submitButton {
+    height: 5.9rem;
+
+    border: none;
+    border-radius: 0.8rem;
+
+    background-color: var(--submit-button-background-color);
+    color: var(--submit-text-color);
+
+    font-size: var(--submit-button-text-font-size);
+    font-weight: var(--submit-button-text-weight);
+    line-height: var(--submit-button-text-height);
+    letter-spacing: var(--submit-button-text-spacing);
+
+    cursor: pointer;
+
+    outline: none;
+}
+
+.submitSection__submitButton:hover{
+    background-color: var(--submit-button-background-color-active);
+}
+
+.submitSection__submitButton:focus-visible{
+    background-color: var(--submit-button-background-color-active);
+}
 
 
 
@@ -345,10 +385,6 @@ input[type='checkbox'] {
 
 
 
-
-
-
-
-.hidden{
+.hidden {
     display: none;
 }
