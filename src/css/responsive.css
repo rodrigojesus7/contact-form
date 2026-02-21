@@ -51,6 +51,12 @@
         display: flex;
         align-items: center;
     }
+
+    .confirmationSection {
+
+        width: 45rem;
+    
+    }
 }
 
 

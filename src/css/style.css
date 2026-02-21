@@ -66,6 +66,7 @@
     --message-sent-text-letter-spacing: 0;
     --message-sent-text-color: #E0F1E8;
     --message-sent-icon-color: #FFFFFF;
+    --message-sent-background-color: #2A4144;
 
 
     --body-background-color: #E0F1E8;
@@ -345,7 +346,7 @@ input[type='checkbox'] {
     border: 0.1rem solid var(--input-checkbox-color);
 }
 
-.submitSection__consentContainer__inputContainer:has(.consentInput:focus-visible){
+.submitSection__consentContainer__inputContainer:has(.consentInput:focus-visible) {
     border-radius: 0.8rem;
     border: 0.1rem solid var(--input-border-color-active);
 
@@ -371,19 +372,64 @@ input[type='checkbox'] {
     outline: none;
 }
 
-.submitSection__submitButton:hover{
+.submitSection__submitButton:hover {
     background-color: var(--submit-button-background-color-active);
 }
 
-.submitSection__submitButton:focus-visible{
+.submitSection__submitButton:focus-visible {
     background-color: var(--submit-button-background-color-active);
 }
 
 
 
 
+.confirmationSection {
+    display: flex;
+    flex-direction: column;
 
+    width: 32.7rem;
 
+    position: absolute;
+
+    margin-top: 2.4rem;
+
+    padding: 2.4rem;
+
+    gap: 0.8rem;
+
+    align-self: flex-start;
+
+    z-index: 9999;
+
+    background-color: var(--message-sent-background-color);
+
+    border-radius: 1.2rem;
+}
+
+.confirmationSection__svgAndText{
+    display: flex;
+    align-items: center;
+
+    gap: 0.8rem;
+}
+
+.confirmationSection__svgAndText__text{
+    font-size: var(--message-sent-title-font-size);
+    font-weight: var(--message-sent-title-font-weight);
+    line-height: var(--message-sent-title-line-height);
+    letter-spacing: var(--message-sent-title-letter-spacing);
+
+    color: var(--message-sent-title-color);
+}
+
+.confirmationSection__text{
+    font-size: var(--message-sent-text-font-size);
+    font-weight: var(--message-sent-text-font-weight);
+    line-height: var(--message-sent-text-line-height);
+    letter-spacing: var(--message-sent-text-letter-spacing);
+
+    color: var(--message-sent-text-color);
+}
 
 .hidden {
     display: none;
