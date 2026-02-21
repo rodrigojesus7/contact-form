@@ -61,11 +61,17 @@ form.addEventListener('submit', function (submit) {
         consentSvg.classList.add('consentSvgBorder');
         consentSvgPath.classList.add('hidden');
 
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+
         setTimeout(() => {
             confirmationSection.classList.add('hidden');
         }, 3500);
     }
 });
+
 
 
 
