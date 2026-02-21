@@ -1,0 +1,46 @@
+@media (min-width: 48rem) {
+
+    .card {
+        width: 69rem;
+
+        padding: 4rem;
+
+        margin-top: 12.8rem;
+        margin-bottom: 12.8rem;
+
+        border-radius: 1.6rem;
+
+        gap: 4rem;
+    }
+
+
+    .formSection__container {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+
+        grid-template-areas:
+            'firstName lastName'
+            'email email'
+            'query query'
+            'message message'
+        ;
+
+    }
+
+    .formSection__container__inputContainer__queryContainer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .query {
+        width: 100%;
+    }
+
+    .textarea {
+        height: 14rem;
+    }
+}
+
+
