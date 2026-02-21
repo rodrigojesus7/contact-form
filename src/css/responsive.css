@@ -8,8 +8,6 @@
         margin-top: 12.8rem;
         margin-bottom: 12.8rem;
 
-        border-radius: 1.6rem;
-
         gap: 4rem;
     }
 
@@ -27,6 +25,9 @@
             'message message'
         ;
 
+        column-gap: 1.6rem;
+        row-gap: 2.4rem;
+
     }
 
     .formSection__container__inputContainer__queryContainer {
@@ -41,6 +42,30 @@
     .textarea {
         height: 14rem;
     }
+
+    .consentLabel {
+        align-items: center;
+    }
+
+    .consentSvgDiv{
+        display: flex;
+        align-items: center;
+    }
 }
 
 
+
+
+@media (min-width: 90rem) {
+
+    .card {
+        width: 73.6rem;
+
+        margin-top: 0;
+        margin-bottom: 0;
+
+        gap: 4rem;
+    }
+
+
+}
