@@ -170,7 +170,8 @@ fieldset {
     grid-area: message;
 }
 
-.formSection__container__inputContainer__error {
+.formSection__container__inputContainer__error,
+.submitSection__consentContainer__error {
     font-size: var(--error-text-font-size);
     font-weight: var(--error-text-font-weight);
     line-height: var(--error-text-line-height);
@@ -196,8 +197,7 @@ fieldset {
 .firstNameInput,
 .lastNameInput,
 .emailInput,
-.radioInputGeneralEnquiry,
-.radioInputSuportRequest{
+.radioInput {
     height: 5.1rem;
     padding: 1.2rem 2.4rem;
 
@@ -206,21 +206,41 @@ fieldset {
 
     border-radius: 0.8rem;
     border: 0.1rem solid var(--input-border-color);
+
+    transition: 0.2s ease-in-out;
 }
 
-.formSection__container__inputContainer__queryContainer{
+.firstNameInput:hover,
+.lastNameInput:hover,
+.emailInput:hover,
+.radioInput,
+.query:hover {
+    border: 0.1rem solid var(--input-border-color-active);
+    cursor: pointer;
+}
+
+.firstNameInput:focus-visible,
+.lastNameInput:focus-visible,
+.emailInput:focus-visible,
+.radioInputGeneralEnquiry:focus-visible,
+.radioInputSuportRequest:focus-visible {
+    outline: none;
+    border: 0.1rem solid var(--input-border-color-active);
+}
+
+.formSection__container__inputContainer__queryContainer {
     display: flex;
     flex-direction: column;
 
     gap: 1.6rem;
 }
 
-.query{
+.query {
     display: flex;
     align-items: center;
 
     gap: 1.2rem;
-    
+
     height: 5.1rem;
     padding: 1.2rem 2.4rem;
 
@@ -236,9 +256,31 @@ fieldset {
     letter-spacing: var(--input-text-spacing);
 
     color: var(--input-text-color);
+
+    cursor: pointer;
 }
 
-.textarea{
+.radioInput {
+    accent-color: var(--input-radio-active-radio-color);
+    outline: none;
+}
+
+.query:has(.radioInput:focus-visible) {
+    border: 0.1rem solid var(--input-border-color-active);
+}
+
+
+
+
+
+.querySelected {
+    background-color: var(--input-radio-active-background-color);
+
+    border: 0.1rem solid var(--input-border-color-active);
+}
+
+
+.textarea {
     height: 24rem;
 
     padding: 1.2rem 2.4rem;
@@ -248,4 +290,65 @@ fieldset {
 
     border-radius: 0.8rem;
     border: 0.1rem solid var(--input-border-color);
+
+    resize: none;
+
+    outline: none;
+
+    cursor: pointer;
+}
+
+.textarea:hover {
+    border: 0.1rem solid var(--input-border-color-active);
+}
+
+.textarea:focus-visible {
+    border: 0.1rem solid var(--input-border-color-active);
+}
+
+.submitSection {
+    display: flex;
+    flex-direction: column;
+
+    gap: 4rem;
+}
+
+.submitSection__consentContainer {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.8rem;
+}
+
+.submitSection__consentContainer__inputContainer {
+    display: flex;
+    align-items: center;
+
+}
+
+.consentLabel{
+    display: flex;
+    align-items: center;
+
+    gap: 1.6rem;
+}
+
+
+input[type='checkbox'] {
+    appearance: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.hidden{
+    display: none;
 }
