@@ -91,7 +91,7 @@ body {
     display: flex;
     flex-direction: column;
 
-    width: 34.3rem;
+    max-width: 34.3rem;
 
     background-color: var(--card-background-color);
 

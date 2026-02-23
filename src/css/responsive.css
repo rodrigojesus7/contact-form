@@ -1,7 +1,7 @@
 @media (min-width: 48rem) {
 
     .card {
-        width: 69rem;
+        min-width: 69rem;
 
         padding: 4rem;
 
@@ -65,7 +65,7 @@
 @media (min-width: 90rem) {
 
     .card {
-        width: 73.6rem;
+        min-width: 73.6rem;
 
         gap: 4rem;
     }
