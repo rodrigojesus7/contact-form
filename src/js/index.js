@@ -67,7 +67,7 @@ form.addEventListener('submit', function (submit) {
         window.scrollTo({
             top: 0,
             behavior: "smooth"
-          });
+        });
 
         setTimeout(() => {
             confirmationSection.classList.add('hidden');
@@ -94,38 +94,59 @@ function verifyInputs() {
     emailInput.classList.remove('errorBorder')
     textarea.classList.remove('errorBorder')
 
+    firstNameInput.removeAttribute('aria-invalid')
+    lastNameInput.removeAttribute('aria-invalid')
+    emailInput.removeAttribute('aria-invalid')
+    radioInputGeneralEnquiry.removeAttribute('aria-invalid')
+    radioInputSuportRequest.removeAttribute('aria-invalid')
+    textarea.removeAttribute('aria-invalid')
+    consentInput.removeAttribute('aria-invalid')
+
 
     if (firstNameInput.value.trim() === "") {
         firstNameInput.classList.add('errorBorder')
         errors[0].classList.remove('hidden')
+
+        firstNameInput.setAttribute('aria-invalid', 'true')
         isValid = false;
     }
 
     if (lastNameInput.value.trim() === "") {
         lastNameInput.classList.add('errorBorder')
         errors[1].classList.remove('hidden')
+
+        lastNameInput.setAttribute('aria-invalid', 'true')
         isValid = false;
     }
 
     if (emailInput.value.trim() === "" || emailRegex.test(emailInput.value) === false) {
         emailInput.classList.add('errorBorder')
         errors[2].classList.remove('hidden')
+
+        emailInput.setAttribute('aria-invalid', 'true')
         isValid = false;
     }
 
     if (!radioInputGeneralEnquiry.checked && !radioInputSuportRequest.checked) {
         errors[3].classList.remove('hidden');
+
+        radioInputGeneralEnquiry.setAttribute('aria-invalid', 'true')
+        radioInputSuportRequest.setAttribute('aria-invalid', 'true')
         isValid = false;
     }
 
     if (textarea.value.trim() === "") {
         textarea.classList.add('errorBorder')
         errors[4].classList.remove('hidden')
+
+        textarea.setAttribute('aria-invalid', 'true')
         isValid = false;
     }
 
     if (!consentInput.checked) {
         consentError.classList.remove('hidden');
+
+        consentInput.setAttribute('aria-invalid', 'true')
         isValid = false;
     } else {
         consentError.classList.add('hidden');

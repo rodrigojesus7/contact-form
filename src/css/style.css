@@ -167,6 +167,10 @@ fieldset {
     grid-area: query;
 }
 
+.queryLabel{
+    margin-bottom: 0.8rem;
+}
+
 .messageContainer {
     grid-area: message;
 }
@@ -443,7 +447,7 @@ input[type='checkbox'] {
     color: var(--message-sent-text-color);
 }
 
-.errorBorder{
+.errorBorder {
     border: 0.15rem solid var(--error-color);
 }
 
