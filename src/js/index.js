@@ -15,6 +15,7 @@ const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const errors = document.querySelectorAll('.formSection__container__inputContainer__error')
 const consentError = document.querySelector('.submitSection__consentContainer__error')
 const submitButton = document.querySelector('.submitSection__submitButton')
+let confirmationText = document.querySelector('.confirmationSection__text')
 
 radioInput.forEach((radio, index) => {
 
@@ -51,6 +52,8 @@ form.addEventListener('submit', function (submit) {
     const isFormValid = verifyInputs();
 
     if (isFormValid) {
+
+        confirmationText.innerHTML = `Thanks for completing the form, ${firstNameInput.value}.<br>We’ll be in touch soon!`
         confirmationSection.classList.remove('hidden');
         form.reset();
 

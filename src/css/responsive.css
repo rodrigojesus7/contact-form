@@ -54,7 +54,7 @@
 
     .confirmationSection {
 
-        width: 45rem;
+        width: fit-content;
     
     }
 }
