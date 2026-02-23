@@ -208,7 +208,7 @@ fieldset {
     border-radius: 0.8rem;
     border: 0.1rem solid var(--input-border-color);
 
-    transition: 0.2s ease-in-out;
+    transition: 0.1s ease-in-out;
 }
 
 .firstNameInput:hover,
@@ -216,9 +216,10 @@ fieldset {
 .emailInput:hover,
 .radioInput,
 .query:hover {
-    border: 0.1rem solid var(--input-border-color-active);
+    border: 0.2rem solid var(--input-border-color-active);
     cursor: pointer;
 }
+
 
 .firstNameInput:focus-visible,
 .lastNameInput:focus-visible,
@@ -226,7 +227,7 @@ fieldset {
 .radioInputGeneralEnquiry:focus-visible,
 .radioInputSuportRequest:focus-visible {
     outline: none;
-    border: 0.1rem solid var(--input-border-color-active);
+    border: 0.2rem solid var(--input-border-color-active);
 }
 
 .formSection__container__inputContainer__queryContainer {
@@ -259,6 +260,8 @@ fieldset {
     color: var(--input-text-color);
 
     cursor: pointer;
+
+    transition: 0.1s ease-in-out;
 }
 
 .radioInput {
@@ -267,7 +270,7 @@ fieldset {
 }
 
 .query:has(.radioInput:focus-visible) {
-    border: 0.1rem solid var(--input-border-color-active);
+    border: 0.2rem solid var(--input-border-color-active);
 }
 
 
@@ -297,14 +300,16 @@ fieldset {
     outline: none;
 
     cursor: pointer;
+
+    transition: 0.1s ease-in-out;
 }
 
 .textarea:hover {
-    border: 0.1rem solid var(--input-border-color-active);
+    border: 0.2rem solid var(--input-border-color-active);
 }
 
 .textarea:focus-visible {
-    border: 0.1rem solid var(--input-border-color-active);
+    border: 0.2rem solid var(--input-border-color-active);
 }
 
 .submitSection {
@@ -325,6 +330,13 @@ fieldset {
     display: flex;
     align-items: center;
 
+    transition: 0.1s ease-in-out;
+}
+
+.submitSection__consentContainer__inputContainer:hover {
+    border-radius: 0.8rem;
+    border: 0.15rem solid var(--input-border-color-active);
+    padding: 0.8rem;
 }
 
 .consentLabel {
@@ -348,7 +360,7 @@ input[type='checkbox'] {
 
 .submitSection__consentContainer__inputContainer:has(.consentInput:focus-visible) {
     border-radius: 0.8rem;
-    border: 0.1rem solid var(--input-border-color-active);
+    border: 0.15rem solid var(--input-border-color-active);
 
     padding: 0.8rem;
 }
@@ -406,14 +418,14 @@ input[type='checkbox'] {
     border-radius: 1.2rem;
 }
 
-.confirmationSection__svgAndText{
+.confirmationSection__svgAndText {
     display: flex;
     align-items: center;
 
     gap: 0.8rem;
 }
 
-.confirmationSection__svgAndText__text{
+.confirmationSection__svgAndText__text {
     font-size: var(--message-sent-title-font-size);
     font-weight: var(--message-sent-title-font-weight);
     line-height: var(--message-sent-title-line-height);
@@ -422,13 +434,17 @@ input[type='checkbox'] {
     color: var(--message-sent-title-color);
 }
 
-.confirmationSection__text{
+.confirmationSection__text {
     font-size: var(--message-sent-text-font-size);
     font-weight: var(--message-sent-text-font-weight);
     line-height: var(--message-sent-text-line-height);
     letter-spacing: var(--message-sent-text-letter-spacing);
 
     color: var(--message-sent-text-color);
+}
+
+.errorBorder{
+    border: 0.15rem solid var(--error-color);
 }
 
 .hidden {

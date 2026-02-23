@@ -68,7 +68,7 @@ form.addEventListener('submit', function (submit) {
 
         setTimeout(() => {
             confirmationSection.classList.add('hidden');
-        }, 3500);
+        }, 4500);
     }
 });
 
@@ -86,18 +86,26 @@ function verifyInputs() {
 
     consentError.classList.add('hidden')
 
+    firstNameInput.classList.remove('errorBorder')
+    lastNameInput.classList.remove('errorBorder')
+    emailInput.classList.remove('errorBorder')
+    textarea.classList.remove('errorBorder')
+
 
     if (firstNameInput.value.trim() === "") {
+        firstNameInput.classList.add('errorBorder')
         errors[0].classList.remove('hidden')
         isValid = false;
     }
 
     if (lastNameInput.value.trim() === "") {
+        lastNameInput.classList.add('errorBorder')
         errors[1].classList.remove('hidden')
         isValid = false;
     }
 
     if (emailInput.value.trim() === "" || emailRegex.test(emailInput.value) === false) {
+        emailInput.classList.add('errorBorder')
         errors[2].classList.remove('hidden')
         isValid = false;
     }
@@ -108,6 +116,7 @@ function verifyInputs() {
     }
 
     if (textarea.value.trim() === "") {
+        textarea.classList.add('errorBorder')
         errors[4].classList.remove('hidden')
         isValid = false;
     }
